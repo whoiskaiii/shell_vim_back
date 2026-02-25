@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/ICer/hkq/sync_fifo_ai_gen/tb'
+let g:netrw_dirhist_4='/home/ICer/hkq/sync_fifo_ai_gen'
+let g:netrw_dirhist_3='/home/ICer/hkq/sync_fifo_claude_gen/sim'
+let g:netrw_dirhist_2='/home/ICer/hkq/sync_fifo_claude_gen/tb'
+let g:netrw_dirhist_1='/home/ICer/hkq/sync_fifo_claude_gen/rtl'
+let g:netrw_dirhist_0='/home/ICer/hkq/sync_fifo_claude_gen'
+let g:netrw_dirhist_9='/home/ICer/.vim/autoload'
+let g:netrw_dirhist_8='/home/ICer/.vim/colors'
+let g:netrw_dirhist_7='/home/ICer/.vim/doc'
+let g:netrw_dirhist_6='/home/ICer/.vim/ftdetect'
