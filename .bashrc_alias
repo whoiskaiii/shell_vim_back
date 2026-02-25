@@ -2,8 +2,9 @@
 alias t='gnome-terminal';
 alias gt="/usr/bin/gnome-terminal --tab &"
 
-# add by hkq begin
-export PS1='\e[1;35m\u\e[0m \e[1;34m\h\e[0m \e[1;31m\w\e[0m\n\e[41m\e[1;37m>\e[0m '  # 格式：用户名 主机名 当前目录 >
+# add by hkq begin ----------------------------------------
+# 格式：用户名 主机名 当前目录 >
+export PS1='\e[1;35m\u\e[0m \e[1;34m\h\e[0m \e[1;31m\w\e[0m\n\e[41m\e[1;37m>\e[0m '
 
 alias ls='ls --time-style=iso --color=auto'
 alias la="ls -a"
@@ -15,12 +16,11 @@ alias lldt='ls -lhdtr'
 
 cd() { builtin cd "$@" && ls -a --color=auto; }
 alias ..='cd ..'
-alias ...='cd ../.'
-alias ....='cd ../..'
-alias .....='cd ../../.'
-alias ......='cd ../../..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
+alias ......='cd ../../../../../'
 
-alias cp='cp -ir'
 alias mv='mv -i'
 alias rm='rm -i'
 
@@ -35,11 +35,13 @@ alias ga='gvim ~/.bashrc_alias'
 alias gv='gvim ~/.vimrc'
 alias gd='gvimdiff'
 
+alias c='code'
+alias cs='code ~/.bashrc'
+alias ca='code ~/.bashrc_alias'
+
 alias t1='tree -L 1'
 alias t2='tree -L 2'
 alias t3='tree -L 3'
-alias t4='tree -L 4'
-alias t5='tree -L 5'
 
 alias greps='grep -Rsn --color=auto'
 alias py='python3'
@@ -47,12 +49,13 @@ alias py='python3'
 alias gad='git add'
 alias gst='git status'
 alias glg='git log -3'
-alias gci='git commit'
+alias gci='git commit -m'
 alias gdf='git diff'
-alias gbc='git branch -vv'
+alias gbr='git branch -vv'
 alias gcl='git clone'
+alias gfc='git fetch'
 
 # project
 alias share='cd /mnt/hgfs/virtual_share/'
 alias uvm='cd ~/hkq/UVM_code_hkq'
-# add by hkq begin
+# add by hkq end ------------------------------------------
